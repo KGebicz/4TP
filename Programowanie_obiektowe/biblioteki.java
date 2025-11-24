@@ -2,7 +2,7 @@ import java.util.*;
 import java.time.*;
 import java.util.Optional;
 
-public class BibliotekiRozszerzone {
+public class biblioteki {
 
     public static void main(String[] args) {
 
@@ -78,55 +78,55 @@ public class BibliotekiRozszerzone {
         // ===========================
         // 4️⃣ MAP / HASHMAP – przechowywanie danych
         // ===========================
-        Map<String, Integer> magazyn = new HashMap<>();
-        magazyn.put("Jabłka", 50);
-        magazyn.put("Gruszki", 30);
-        magazyn.put("Banany", 100);
+//         Map<String, Integer> magazyn = new HashMap<>();
+//         magazyn.put("Jabłka", 50);
+//         magazyn.put("Gruszki", 30);
+//         magazyn.put("Banany", 100);
 
-        System.out.println("\nZawartość magazynu:");
-        for (Map.Entry<String, Integer> e : magazyn.entrySet()) {
-            System.out.println(e.getKey() + " – " + e.getValue() + " sztuk");
-        }
+//         System.out.println("\nZawartość magazynu:");
+//         for (Map.Entry<String, Integer> e : magazyn.entrySet()) {
+//             System.out.println(e.getKey() + " – " + e.getValue() + " sztuk");
+//         }
 
-        // Aktualizacja wartości
-        magazyn.put("Jabłka", magazyn.get("Jabłka") + 20);
-        System.out.println("Nowy stan jabłek: " + magazyn.get("Jabłka"));
+//         // Aktualizacja wartości
+//         magazyn.put("Jabłka", magazyn.get("Jabłka") + 20);
+//         System.out.println("Nowy stan jabłek: " + magazyn.get("Jabłka"));
 
-        // Sprawdzenie, czy klucz istnieje
-        if (magazyn.containsKey("Banany")) {
-            System.out.println("Banany są dostępne w magazynie!");
-        }
+//         // Sprawdzenie, czy klucz istnieje
+//         if (magazyn.containsKey("Banany")) {
+//             System.out.println("Banany są dostępne w magazynie!");
+//         }
 
-        // ===========================
-        // 5️⃣ SET / HASHSET – unikalne wartości
-        // ===========================
-        Set<String> uczestnicy = new HashSet<>();
-        uczestnicy.add("Ala");
-        uczestnicy.add("Bartek");
-        uczestnicy.add("Celina");
-        uczestnicy.add("Ala"); // duplikat – ignorowany
+//         // ===========================
+//         // 5️⃣ SET / HASHSET – unikalne wartości
+//         // ===========================
+//         Set<String> uczestnicy = new HashSet<>();
+//         uczestnicy.add("Ala");
+//         uczestnicy.add("Bartek");
+//         uczestnicy.add("Celina");
+//         uczestnicy.add("Ala"); // duplikat – ignorowany
 
-        System.out.println("\nLista uczestników (unikalne imiona): " + uczestnicy);
+//         System.out.println("\nLista uczestników (unikalne imiona): " + uczestnicy);
 
-        // Sprawdzenie, czy ktoś jest na liście
-        System.out.println("Czy Bartek jest na liście? " + uczestnicy.contains("Bartek"));
+//         // Sprawdzenie, czy ktoś jest na liście
+//         System.out.println("Czy Bartek jest na liście? " + uczestnicy.contains("Bartek"));
 
-        // Połączenie zbiorów
-        Set<String> nowi = new HashSet<>(Arrays.asList("Daniel", "Ewa"));
-        uczestnicy.addAll(nowi);
-        System.out.println("Po dodaniu nowych uczestników: " + uczestnicy);
+//         // Połączenie zbiorów
+//         Set<String> nowi = new HashSet<>(Arrays.asList("Daniel", "Ewa"));
+//         uczestnicy.addAll(nowi);
+//         System.out.println("Po dodaniu nowych uczestników: " + uczestnicy);
 
-        // ===========================
-        // 6️⃣ OPTIONAL – bezpieczna praca z null
-        // ===========================
-        String nazwisko = null;
-        Optional<String> optNazwisko = Optional.ofNullable(nazwisko);
-        System.out.println("\nOptional:");
-        System.out.println("Czy nazwisko istnieje? " + optNazwisko.isPresent());
-        System.out.println("Wartość lub domyślna: " + optNazwisko.orElse("Brak nazwiska"));
+//         // ===========================
+//         // 6️⃣ OPTIONAL – bezpieczna praca z null
+//         // ===========================
+//         String nazwisko = null;
+//         Optional<String> optNazwisko = Optional.ofNullable(nazwisko);
+//         System.out.println("\nOptional:");
+//         System.out.println("Czy nazwisko istnieje? " + optNazwisko.isPresent());
+//         System.out.println("Wartość lub domyślna: " + optNazwisko.orElse("Brak nazwiska"));
 
-        // Optional z wartością
-        Optional<String> imie = Optional.of("Krzysztof");
-        imie.ifPresent(i -> System.out.println("Witaj, " + i + "!"));
-    }
-}
+//         // Optional z wartością
+//         Optional<String> imie = Optional.of("Krzysztof");
+//         imie.ifPresent(i -> System.out.println("Witaj, " + i + "!"));
+//     }
+// }
